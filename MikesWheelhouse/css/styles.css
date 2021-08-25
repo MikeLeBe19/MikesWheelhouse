@@ -1,13 +1,95 @@
+html {
+	font-size: 62.5%;
+	background-image: url(../images/external-content1.duckduckgo.com);
+	background-size: cover;
+	background-color: lightgrey;
+}
+.flexcontainer {
+	display: flex;
+	flex-direction: column;
+}
+.flexbox1 {
+	/* this text-align: center; centers my photo */
+	text-align: center;
+	padding: 2rem;
+	margin-left: 25rem;
+}
+main {
+	font-size: 8rem;
+	text-align: center;
+	color: dodgerblue;
+	margin-left: 25rem;
+}
+.flexcontainer2 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+.flexbox2 {
+	display: flex;
+	border: 50px solid black;
+	flex-direction: column;
+	size: 100vh 100vw;
+	position: fixed;
+	word-spacing: 2px;
+	scroll-behavior: center;
+	border: 2px solid black;
+	padding: 2rem;
+	background-color: darkgrey;
+	column-width: 12rem;
+}
+/* .sidebar {
+	size: 100vh 100vw;
+	position: fixed;
+	border: 2px solid black;
+	padding: 2rem;
+	background-color: darkgrey;
+} */
+.flexcontainer3 {
+	display: flex;
+	flex-direction: column;
+	column-width: 12rem;
+	text-align: right;
+	flex-wrap: nowrap;
+	padding-left: 25rem;
+}
+.flexbox3 {
+	display: flex;
+	border: 50px solid black;
+	flex-direction: start;
+	justify-content: flex-end;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
 h1 {
-	font-size: 20;
-	font-weight: normal;
+	font-size: 5rem;
+	font-weight: bold;
+	margin-top: 75px;
+}
+p,
+ul {
+	font-size: 4rem;
+	margin-top: 2.5px;
 }
 title {
 	text-align: center;
 }
-header {
-	font-size: 80px;
-	text-align: center;
-	font-weight: normal;
-	color: aquamarine;
+.box {
+	font-size: 4rem;
+	font: black;
+	word-spacing: 0.5rem;
+}
+a:hover {
+	color: dodgerblue;
+}
+a:active {
+	color: dodgerblue;
+}
+nav {
+	font-size: 4rem;
+	word-spacing: 2rem;
+	border: 1px solid black;
+	size: 100vw;
 }
