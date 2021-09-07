@@ -1,0 +1,312 @@
+.html {
+	/* background-image: url(../images/chicago); */
+	background-color: rgb(94, 94, 94);
+}
+.body {
+	box-sizing: border-box;
+	/* size: 100vh 100vw; */
+}
+.gridcontainer {
+	display: grid;
+	grid-template-areas:
+		"profile navbar navbar"
+		"retire wheelhouse awards"
+		"retire wheelhoues awards";
+	/* border: 1px solid black; */
+}
+.profilepic {
+	grid-area: profile;
+	/* border: 1px solid black; */
+	/* background-color: lightblue; */
+	/* background-color: rgb(94, 94, 94); */
+	background-image: url(../images/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg);
+}
+.profile {
+	border-radius: 50%;
+	padding: 2rem;
+	background-color: rgb(94, 94, 94);
+}
+.navbar {
+	grid-area: navbar;
+	display: flex;
+	justify-content: flex-end;
+	/* border: 1px solid black; */
+	/* background-color: rgb(94, 94, 94); */
+	background-image: url(../images/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg);
+	background-size: contain;
+}
+.navbararea {
+	display: flex;
+	height: 8%;
+	width: 70%;
+	/* border-radius: 15%; */
+	/* border: 1px solid black; */
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	position: fixed;
+	/* background-color: rgb(94, 94, 94); */
+	/* opacity: 90; */
+}
+.button_home {
+	margin: 2px;
+	/* padding: 4em; */
+	/* display: inline-block; */
+	height: 35px;
+	padding: 10px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: rgb(77, 76, 76);
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 1px #999;
+}
+.button_home:hover {
+	background-color: red;
+}
+.button_home:active {
+	background-color: red;
+	box-shadow: 0 5px black;
+	transform: translateY(4px);
+}
+.button_about {
+	margin: 2px;
+	/* padding: 4em; */
+	/* display: inline-block; */
+	height: 35px;
+	padding: 10px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: rgb(77, 76, 76);
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 1px #999;
+}
+.button_about:hover {
+	background-color: red;
+}
+.button_about:active {
+	background-color: red;
+	box-shadow: 0 5px black;
+	transform: translateY(4px);
+}
+.button_experience {
+	margin: 2px;
+	/* padding: 4em; */
+	/* display: inline-block; */
+	height: 35px;
+	padding: 10px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: rgb(77, 76, 76);
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 1px #999;
+}
+.button_experience:hover {
+	background-color: red;
+}
+.button_experience:active {
+	background-color: red;
+	box-shadow: 0 5px black;
+	transform: translateY(4px);
+}
+.button_skills {
+	margin: 2px;
+	/* padding: 4em; */
+	/* display: inline-block; */
+	height: 35px;
+	padding: 10px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: rgb(77, 76, 76);
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 1px #999;
+}
+.button_skills:hover {
+	background-color: red;
+}
+.button_skills:active {
+	background-color: red;
+	box-shadow: 0 5px black;
+	transform: translateY(4px);
+}
+.button_education {
+	margin: 2px;
+	/* padding: 4em; */
+	/* display: inline-block; */
+	height: 35px;
+	padding: 10px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: rgb(77, 76, 76);
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 1px #999;
+}
+.button_education:hover {
+	background-color: red;
+}
+.button_education:active {
+	background-color: red;
+	box-shadow: 0 5px black;
+	transform: translateY(4px);
+}
+.button_projects {
+	margin: 2px;
+	/* padding: 4em; */
+	/* display: inline-block; */
+	height: 35px;
+	padding: 10px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: rgb(77, 76, 76);
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 1px #999;
+}
+.button_projects:hover {
+	background-color: red;
+}
+.button_projects:active {
+	background-color: red;
+	box-shadow: 0 5px black;
+	transform: translateY(4px);
+}
+.button_contactme {
+	margin: 2px;
+	/* padding: 4em; */
+	/* display: inline-block; */
+	height: 35px;
+	padding: 10px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: rgb(77, 76, 76);
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 1px #999;
+}
+.button_contactme:hover {
+	background-color: red;
+}
+.button_contactme:active {
+	background-color: red;
+	box-shadow: 0 5px black;
+	transform: translateY(4px);
+}
+.button_myresume {
+	margin: 2px;
+	/* padding: 4em; */
+	/* display: inline-block; */
+	height: 35px;
+	padding: 10px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: rgb(77, 76, 76);
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 1px #999;
+}
+.button_myresume:hover {
+	background-color: red;
+}
+.button_myresume:active {
+	background-color: red;
+	box-shadow: 0 5px black;
+	transform: translateY(4px);
+}
+/* .button8 {
+	margin: 5px;
+	padding: 1em;
+}
+.button9 {
+	margin: 5px;
+	padding: 1em;
+} */
+.link_home {
+	color: turquoise;
+}
+.link_about {
+	color: turquoise;
+}
+.link_experience {
+	color: turquoise;
+}
+.link_skills {
+	color: turquoise;
+}
+.link_education {
+	color: turquoise;
+}
+.link_projects {
+	color: turquoise;
+}
+.link_contactme {
+	color: turquoise;
+}
+.link_myresume {
+	color: turquoise;
+}
+.retire {
+	grid-area: retire;
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+	margin: 15px;
+	/* border: 1px solid black; */
+	background-image: url(../images/external-content1.duckduckgo.com.jpg);
+	background-size: contain;
+}
+/* .retirepics {
+	width: 100%;
+} */
+.wheelhouse {
+	grid-area: wheelhouse;
+	text-align: center;
+	background-image: url(../images/external-content1.duckduckgo.com.jpg);
+	background-size: contain;
+	/* border: 1px solid black; */
+	/* overflow: scroll; */
+}
+.awards {
+	grid-area: awards;
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+	margin: 15px;
+	background-image: url(../images/external-content1.duckduckgo.com.jpg);
+	background-size: contain;
+	/* border: 1px solid black; */
+}

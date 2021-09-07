@@ -2,10 +2,12 @@ html {
 	font-size: 62.5%;
 	background-image: url(../images/external-content1.duckduckgo.com);
 	background-size: cover;
+	display: grid;
 }
 body {
 	display: grid;
-	grid-template: 50vh / 30% 70%;
+	grid-template: 60vh 10vh 30vh / 30% 70%;
+	grid-gap: 5px;
 }
 .gridcontainer1 {
 	color: dodgerblue;
@@ -14,31 +16,35 @@ body {
 	font-size: 5rem;
 	justify-content: center;
 	text-align: center;
+	margin: 10px;
 }
 .gridbox2 {
 	/* this text-align: center; centers my photo */
 	text-align: center;
+	margin-bottom: 75px;
+	padding-bottom: 15%;
 }
 .gridcontainer3 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.gridcontainer4 {
 	background-image: url(../images/markus-spiske-8OyKWQgBsKQ-unsplash.jpg);
-	background-size: contain;
+	overflow: hidden;
 }
 .gridbox3 {
+	flex-direction: row;
 	position: fixed;
 	word-spacing: 2px;
 	padding: 10px;
 	background-image: url(../images/markus-spiske-8OyKWQgBsKQ-unsplash.jpg);
 }
-.gridcontainer4 {
+.gridcontainer5 {
 	display: flex;
 	flex-direction: column;
-	/* border: 1rem solid black; */
-	/* column-width: 12rem; */
-	flex-wrap: nowrap;
-	/* padding-left: 25rem; */
-	overflow: hidden;
 }
-.gridbox4 {
+.gridbox5 {
 	display: flex;
 	border: 25px solid black;
 	size: 100vw;
@@ -66,15 +72,9 @@ title {
 }
 .box {
 	font-size: 4rem;
-	font: blue;
-	word-spacing: 0.5rem;
-	flex-shrink: 3;
 }
 a {
 	color: rgb(135, 213, 233);
-}
-.resumelink.a {
-	color: red;
 }
 a:hover {
 	color: dodgerblue;
@@ -82,13 +82,6 @@ a:hover {
 a:active {
 	color: dodgerblue;
 }
-nav {
-	font-size: 4rem;
-	word-spacing: 2rem;
-	border: 1px solid black;
-	size: 100vw;
-}
-
-.gridcontainer2 {
-	display: grid;
+.ProfilePic {
+	border-radius: 50%;
 }

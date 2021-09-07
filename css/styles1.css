@@ -1,0 +1,53 @@
+html {
+	font-size: 62.5%;
+	background-image: url(../images/external-content1.duckduckgo.com);
+	/* background-color: black; */
+	background-size: cover;
+	box-sizing: border-box;
+}
+body {
+	display: grid;
+	grid-template-columns: 3;
+	grid-template-rows: 3;
+	/* grid-template-areas:
+		"back back profile back back"
+		"intro intro intro intro intro"
+		"menu awards content content awards";
+	justify-content: space-evenly; */
+}
+.gridcontainer1 {
+	display: grid;
+	background-image: url(../images/chicago.external-content.duckduckgo.com);
+	margin: 50px;
+	padding: 50px;
+}
+.gridbox1 {
+	grid-row-start: 2;
+}
+.gridbox2 {
+	grid-column-start: 3;
+}
+.gridcontainer2 {
+	display: grid;
+	grid-column-start: 3;
+	background-image: url(../images/chicago.external-content.duckduckgo.com);
+}
+.gridcontainer3 {
+	background-image: url(../images/chicago.external-content.duckduckgo.com);
+}
+.gridbox3 {
+	grid-area: menu;
+}
+.gridcontainer4 {
+	background-image: url(../images/chicago.external-content.duckduckgo.com);
+}
+.gridbox4 {
+}
+.ProfilePic {
+	border-radius: 50%;
+}
+img {
+	border-radius: 50%;
+	border: 1px solid black;
+	box-shadow: 10px 10px 10px;
+}

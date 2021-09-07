@@ -1,119 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale" />
-		<meta lang="en" charset="utf-8" />
-		<meta
-			description="description"
-			content="Mike's Resume, Work, and Bio"
-		/>
-		<link rel="stylesheet" href="css/styles.css" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Grid Layout</title>
+		<link rel="stylesheet" href="css/gridstyles.css" />
 	</head>
 	<body>
-		<div class="gridcontainer1">
-			<div class="gridbox1">
-				<main>Hello, I'm Mike!</main>
-			</div>
-			<div class="gridbox2">
+		<div class="gridcontainer">
+			<div class="profilepic">
 				<img
+					class="profile"
 					src="images/mike.JPG"
-					alt="SELFIE"
-					style="width: 300px; height: 300px"
+					alt="Selfie"
+					style="width: 25vh"
 				/>
 			</div>
-		</div>
-		<div class="gridcontainer2">
-			<img
-				src="images/sawyer-bengtson-tnv84LOjes4-unsplash.jpg"
-				alt="Chicago"
-				style="width: 100%; height: 100%"
-			/>
-			<title>Mike's Wheelhouse</title>
-		</div>
-		<div class="gridcontainer3">
-			<div class="gridbox3">
-				<div class="box"><a href="#section-about">About</a></div>
-				<div class="box">
-					<a href="#section-experience">Experience</a>
-				</div>
-				<div class="box"><a href="#section-skills">Skills</a></div>
-				<div class="box">
-					<a href="#section-education">Education</a>
-				</div>
-				<div class="box"><a href="#section-projects">Projects</a></div>
-				<div class="box">
-					<a href="#section-contactme">Contact Me</a>
-				</div>
-				<div class="box"><a href="#section-resume">Resume</a></div>
-			</div>
-		</div>
-		<div class="gridcontainer4">
-			<div class="gridbox4">
-				<h1 id="section-home">Welcome to my Wheelhouse!</h1>
-				<p>
-					This is the beginning of the defining of my wheelhouse. I
-					love developing a project from front to back and start to
-					finish. My wheelhouse showcases the work I have done, hosts
-					my resume, and provides an introduction to who I am.
-				</p>
-				<h1 id="section-about">About Me</h1>
-				<p>
-					I am a Computer Science graduate who enjoys life behind a
-					computer creating solutions to problems. I really love
-					programming. The stack or language is irrelevant to me. If I
-					don't know it, that's more than enough of a reason for me to
-					learn it.
-				</p>
-				<h1 id="section-experience">Experience</h1>
-				<p>
-					Prior to college, I spent 5 years in the United States Army
-					as a Medic. I spent two years attached to an infantry
-					platoon, suppporting their missions and training. The last 3
-					years were spent as an Administrative Clerk where I composed
-					reports utilizing Microsoft Office for the Command Team.
-				</p>
-				<h1 id="section-skills">Skills</h1>
-				<p>
-					My frontend skills reside within HTML5, CSS3, and
-					Javascript. I have knowledge of React, Angular, and Vue. On
-					the flipside, I work with Node.js, C#, and Python. Express
-					and Bootstrap are nice frameworks that I have utilized. Git
-					and Github are my choices for version control. I have used
-					AWS but prefer Azure as I have more experience with it. I
-					have utilized all of this tech in an agile environment.
-				</p>
-				<h1 id="section-education">Education</h1>
-				<p>
-					Lewis University, 2019-2021<br />
-					Bachelor of Science in Computer Science<br />
-					Western Illinois University, 2017-2018
-				</p>
-				<h1 id="section-projects">Projects</h1>
-				<p>
-					Projects: <br />
-					Projects in Progress: <br />
-					Bug Tracker / Help-Desk Ticketing System - This project will
-					have several roles. Each role has its own responsibility to
-					the system. For example, a supervisor will be able to
-					delegate "tickets" to a customer service representative.
-					Then the customer service representative will see the role
-					assigned to them and be able to start working on it. More to
-					follow...
-				</p>
-				<h1 id="section-contactme">Contact Me</h1>
-				<p>
-					Cell: 309-333-9926<br />
-					Email: lebegue92@yahoo.com
-				</p>
-				<h1 id="section-resume">Resume</h1>
-				<div class="resumeLINK">
-					<p>
-						<a
-							href="https://1drv.ms/b/s!AvbyeLexG3XUhMYJjmuaKOykCCbCdQ?e=yimE68"
+			<div class="navbar">
+				<div class="navbararea">
+					<div class="button_home">
+						<a class="link_home" href="#section-home">Home</a>
+					</div>
+					<!-- <div class="button_home"><a href="#section-home">Home</div> -->
+					<div class="button_about">
+						<a class="link_about" href="#section-about">About</a>
+					</div>
+					<div class="button_experience">
+						<a class="link_experience" href="#section-experience"
+							>Experience</a
+						>
+					</div>
+					<div class="button_skills">
+						<a class="link_skills" href="#section-skills">Skills</a>
+					</div>
+					<div class="button_education">
+						<a class="link_education" href="#section-education"
+							>Education</a
+						>
+					</div>
+					<div class="button_projects">
+						<a class="link_projects" href="#section-projects"
+							>Projects</a
+						>
+					</div>
+					<div class="button_contactme">
+						<a class="link_contactme" href="#section-contactme"
+							>Contact Me</a
+						>
+					</div>
+					<div class="button_myresume">
+						<a class="link_myresume" href="#section-resume"
 							>My Resume</a
 						>
-					</p>
+					</div>
+					<!-- <div class="button9">
+						<a href="#section-about">About</a>
+					</div> -->
 				</div>
+			</div>
+			<div class="retire" style="width: 16vw">
+				<img
+					class="retirepics"
+					src="images/CertOfApprec.JPEG"
+					alt="Certificate of Appreciation"
+					style="width: 100%"
+				/>
+				<img
+					class="retirepics"
+					src="images/ShadowBox.JPEG"
+					alt="Shadow Box"
+					style="width: 100%"
+				/>
+				<img
+					class="retirepics"
+					src="images/CertOfRetire.JPEG"
+					alt="Certificate of Retirement"
+					style="width: 100%"
+				/>
+			</div>
+			<div class="wheelhouse" style="width: 66vw">
+				<div class="wheelhousebody">
+					<h1 id="section-home">Welcome to my Wheelhouse!</h1>
+					<p>
+						This is the beginning of the defining of my wheelhouse.
+						I love developing a project from front to back and start
+						to finish. My wheelhouse showcases the work I have done,
+						hosts my resume, and provides an introduction to who I
+						am.
+					</p>
+					<h1 id="#section-about">About Me</h1>
+					<p>
+						I am a Computer Science graduate who enjoys life behind
+						a computer creating solutions to problems. I really love
+						programming. The stack or language is irrelevant to me.
+						If I don't know it, that's more than enough of a reason
+						for me to learn it.
+					</p>
+					<h1 id="section-experience">Experience</h1>
+					<p>
+						Prior to college, I spent 5 years in the United States
+						Army as a Medic. I spent two years attached to an
+						infantry platoon, suppporting their missions and
+						training. The last 3 years were spent as an
+						Administrative Clerk where I composed reports utilizing
+						Microsoft Office for the Command Team.
+					</p>
+					<h1 id="section-skills">Skills</h1>
+					<p>
+						My frontend skills reside within HTML5, CSS3, and
+						Javascript. I have knowledge of React, Angular, and Vue.
+						On the flipside, I work with Node.js, C#, and Python.
+						Express and Bootstrap are nice frameworks that I have
+						utilized. Git and Github are my choices for version
+						control. I have used AWS but prefer Azure as I have more
+						experience with it. I have utilized all of this tech in
+						an agile environment.
+					</p>
+					<h1 id="section-education">Education</h1>
+					<p>
+						Lewis University, 2019-2021<br />
+						Bachelor of Science in Computer Science<br />
+						Western Illinois University, 2017-2018
+					</p>
+					<h1 id="section-projects">Projects</h1>
+					<p>
+						Projects in Progress: <br />
+						Bug Tracker / Help-Desk Ticketing System - This project
+						will have several roles. Each role has its own
+						responsibility to the system. For example, a supervisor
+						will be able to delegate "tickets" to a customer service
+						representative. Then the customer service representative
+						will see the role assigned to them and be able to start
+						working on it. More to follow...
+					</p>
+					<h1 id="section-contactme">Contact Me</h1>
+					<p>
+						Cell: 309-333-9926<br />
+						Email: lebegue92@yahoo.com
+					</p>
+					<h1 id="section-resume">Resume</h1>
+					<div class="resumeLINK">
+						<p>
+							<a
+								href="https://1drv.ms/b/s!AvbyeLexG3XUhMYJjmuaKOykCCbCdQ?e=yimE68"
+								>My Resume</a
+							>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="awards">
+				<img
+					class=""
+					src="images/ARCOM.JPEG"
+					alt="Army Commendation Medal"
+					style="width: 100%"
+				/>
+				<img
+					class=""
+					src="images/Diploma.JPEG"
+					alt="Lewis University Diploma"
+					style="width: 100%"
+				/>
 			</div>
 		</div>
 	</body>
