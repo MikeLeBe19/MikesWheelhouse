@@ -41,7 +41,7 @@
 	width: 70%;
 	/* border-radius: 15%; */
 	/* border: 1px solid black; */
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: flex-end;
 	position: fixed;
 	/* background-color: rgb(94, 94, 94); */
