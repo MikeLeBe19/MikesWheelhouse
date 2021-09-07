@@ -285,6 +285,7 @@
 	flex-direction: column;
 	row-gap: 30px;
 	margin-top: 5%;
+	width: 25vw;
 	border: 1px solid black;
 	background-image: url(../images/external-content1.duckduckgo.com.jpg);
 	background-size: contain;
