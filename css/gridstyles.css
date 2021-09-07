@@ -286,7 +286,7 @@
 	row-gap: 30px;
 	margin-top: 5%;
 	width: 25vw;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 	background-image: url(../images/external-content1.duckduckgo.com.jpg);
 	background-size: contain;
 }
@@ -298,7 +298,7 @@
 	text-align: center;
 	background-image: url(../images/external-content1.duckduckgo.com.jpg);
 	background-size: contain;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 	/* overflow: scroll; */
 }
 .awards {
@@ -309,5 +309,5 @@
 	margin-top: 5%;
 	background-image: url(../images/external-content1.duckduckgo.com.jpg);
 	background-size: contain;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 }
