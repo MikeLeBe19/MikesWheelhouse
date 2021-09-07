@@ -13,6 +13,7 @@
 }
 .profilepic {
 	grid-area: profile;
+	z-index: -1;
 	background-image: url(../images/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg);
 }
 .profile {
@@ -30,7 +31,7 @@
 .navbararea {
 	display: flex;
 	height: 8%;
-	width: 70%;
+	width: 68%;
 	flex-wrap: wrap;
 	justify-content: flex-end;
 	position: fixed;
@@ -249,7 +250,8 @@
 	flex-direction: column;
 	row-gap: 30px;
 	margin-top: 5%;
-	width: 25vw;
+	width: 30vw;
+	z-index: -1;
 	background-image: url(../images/external-content1.duckduckgo.com.jpg);
 	background-size: contain;
 }
