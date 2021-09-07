@@ -1,10 +1,8 @@
 .html {
-	/* background-image: url(../images/chicago); */
 	background-color: rgb(94, 94, 94);
 }
 .body {
 	box-sizing: border-box;
-	/* size: 100vh 100vw; */
 }
 .gridcontainer {
 	display: grid;
@@ -12,7 +10,6 @@
 		"profile navbar navbar"
 		"retire wheelhouse awards"
 		"retire wheelhouse awards";
-	/* border: 1px solid black; */
 }
 .profilepic {
 	grid-area: profile;
@@ -34,18 +31,12 @@
 	display: flex;
 	height: 8%;
 	width: 70%;
-	/* border-radius: 15%; */
-	/* border: 1px solid black; */
 	flex-wrap: wrap;
 	justify-content: flex-end;
 	position: fixed;
-	/* background-color: rgb(94, 94, 94); */
-	/* opacity: 90; */
 }
 .button_home {
 	margin: 2px;
-	/* padding: 4em; */
-	/* display: inline-block; */
 	height: 35px;
 	padding: 10px;
 	font-size: 24px;
@@ -69,8 +60,6 @@
 }
 .button_about {
 	margin: 2px;
-	/* padding: 4em; */
-	/* display: inline-block; */
 	height: 35px;
 	padding: 10px;
 	font-size: 24px;
@@ -94,8 +83,6 @@
 }
 .button_experience {
 	margin: 2px;
-	/* padding: 4em; */
-	/* display: inline-block; */
 	height: 35px;
 	padding: 10px;
 	font-size: 24px;
@@ -119,8 +106,6 @@
 }
 .button_skills {
 	margin: 2px;
-	/* padding: 4em; */
-	/* display: inline-block; */
 	height: 35px;
 	padding: 10px;
 	font-size: 24px;
@@ -144,8 +129,6 @@
 }
 .button_education {
 	margin: 2px;
-	/* padding: 4em; */
-	/* display: inline-block; */
 	height: 35px;
 	padding: 10px;
 	font-size: 24px;
@@ -169,8 +152,6 @@
 }
 .button_projects {
 	margin: 2px;
-	/* padding: 4em; */
-	/* display: inline-block; */
 	height: 35px;
 	padding: 10px;
 	font-size: 24px;
@@ -194,8 +175,6 @@
 }
 .button_contactme {
 	margin: 2px;
-	/* padding: 4em; */
-	/* display: inline-block; */
 	height: 35px;
 	padding: 10px;
 	font-size: 24px;
@@ -219,8 +198,6 @@
 }
 .button_myresume {
 	margin: 2px;
-	/* padding: 4em; */
-	/* display: inline-block; */
 	height: 35px;
 	padding: 10px;
 	font-size: 24px;
@@ -242,14 +219,6 @@
 	box-shadow: 0 5px black;
 	transform: translateY(4px);
 }
-/* .button8 {
-	margin: 5px;
-	padding: 1em;
-}
-.button9 {
-	margin: 5px;
-	padding: 1em;
-} */
 .link_home {
 	color: turquoise;
 }
@@ -281,8 +250,6 @@
 	row-gap: 30px;
 	margin-top: 5%;
 	width: 25vw;
-	z-index: -1;
-	/* border: 1px solid black; */
 	background-image: url(../images/external-content1.duckduckgo.com.jpg);
 	background-size: contain;
 }
@@ -291,8 +258,6 @@
 	text-align: center;
 	background-image: url(../images/external-content1.duckduckgo.com.jpg);
 	background-size: contain;
-	/* border: 1px solid black; */
-	/* overflow: scroll; */
 }
 .awards {
 	grid-area: awards;
@@ -302,5 +267,4 @@
 	margin-top: 5%;
 	background-image: url(../images/external-content1.duckduckgo.com.jpg);
 	background-size: contain;
-	/* border: 1px solid black; */
 }
