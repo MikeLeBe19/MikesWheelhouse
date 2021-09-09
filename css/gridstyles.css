@@ -260,6 +260,7 @@
 	text-align: center;
 	background-image: url(../images/external-content1.duckduckgo.com.jpg);
 	background-size: contain;
+	margin-right: 5%;
 }
 .awards {
 	grid-area: awards;
