@@ -1,273 +1,368 @@
 .html {
-	background-color: rgb(94, 94, 94);
+  background-color: rgb(94, 94, 94);
 }
 .body {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 .gridcontainer {
-	display: grid;
-	grid-template-areas:
-		"profile navbar navbar"
-		"retire wheelhouse awards"
-		"retire wheelhouse awards";
+  display: grid;
+  grid-template-areas:
+    "profile navbar navbar"
+    "retire wheelhouse awards"
+    "retire wheelhouse awards";
 }
 .profilepic {
-	grid-area: profile;
-	z-index: -1;
-	background-image: url(../images/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg);
+  grid-area: profile;
+  z-index: -1;
+  /* background-color: rgb(94, 94, 94); */
+  /* background-image: url(../images/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg); */
+  background-image: url(../images/external-content1.duckduckgo.com.jpg);
 }
 .profile {
-	border-radius: 50%;
-	padding: 2rem;
-	background-color: rgb(94, 94, 94);
+  border-radius: 50%;
+  padding: 2rem;
+  /* background-color: rgb(94, 94, 94); */
+  background-color: turquoise;
 }
 .navbar {
-	grid-area: navbar;
-	display: flex;
-	justify-content: flex-start;
-	background-image: url(../images/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg);
-	background-size: contain;
+  grid-area: navbar;
+  display: flex;
+  justify-content: flex-start;
+  /* background-image: url(../images/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg); */
+  background-image: url(../images/sawyer-bengtson-tnv84LOjes4-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .navbararea {
-	display: flex;
-	height: 8%;
-	width: 68%;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-	position: fixed;
+  display: flex;
+  height: 8%;
+  width: 68%;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: fixed;
 }
-.button_home {
-	margin: 2px;
-	height: 35px;
-	padding: 10px;
-	font-size: 24px;
-	cursor: pointer;
-	text-align: center;
-	text-decoration: none;
-	outline: none;
-	color: #fff;
-	background-color: rgb(77, 76, 76);
-	border: none;
-	border-radius: 15px;
-	box-shadow: 0 1px #999;
+/*
+@media (max-width: 1300px) {
+  .visuallyHidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+
+  .hamburger {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    align-self: flex-end;
+    justify-self: flex-end;
+  }
+
+  .hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+  }
+
+  .bar1 {
+    top: 0;
+  }
+
+  .bar2,
+  .bar3 {
+    top: 13.5px;
+  }
+
+  .bar3 {
+    right: 0;
+  }
+
+  .bar4 {
+    bottom: 0;
+  }
+  .checkbox1:checked + label > .hamburger1 > .bar1 {
+    transform: rotate(45deg);
+    transform-origin: 5%;
+    width: 41px;
+  }
+
+  .checkbox1:checked + label > .hamburger1 > .bar2 {
+    transform: translateX(-40px);
+    background-color: transparent;
+  }
+
+  .checkbox1:checked + label > .hamburger1 > .bar3 {
+    transform: translateX(40px);
+    background-color: transparent;
+  }
+
+  .checkbox1:checked + label > .hamburger1 > .bar4 {
+    transform-origin: 5%;
+    transform: rotate(-45deg);
+    width: 41px;
+  }
+
+  /* .menu-items {
+  }
 }
-.button_home:hover {
-	background-color: red;
-}
-.button_home:active {
-	background-color: red;
-	box-shadow: 0 5px black;
-	transform: translateY(4px);
-}
-.button_about {
-	margin: 2px;
-	height: 35px;
-	padding: 10px;
-	font-size: 24px;
-	cursor: pointer;
-	text-align: center;
-	text-decoration: none;
-	outline: none;
-	color: #fff;
-	background-color: rgb(77, 76, 76);
-	border: none;
-	border-radius: 15px;
-	box-shadow: 0 1px #999;
-}
-.button_about:hover {
-	background-color: red;
-}
-.button_about:active {
-	background-color: red;
-	box-shadow: 0 5px black;
-	transform: translateY(4px);
-}
-.button_experience {
-	margin: 2px;
-	height: 35px;
-	padding: 10px;
-	font-size: 24px;
-	cursor: pointer;
-	text-align: center;
-	text-decoration: none;
-	outline: none;
-	color: #fff;
-	background-color: rgb(77, 76, 76);
-	border: none;
-	border-radius: 15px;
-	box-shadow: 0 1px #999;
-}
-.button_experience:hover {
-	background-color: red;
-}
-.button_experience:active {
-	background-color: red;
-	box-shadow: 0 5px black;
-	transform: translateY(4px);
-}
-.button_skills {
-	margin: 2px;
-	height: 35px;
-	padding: 10px;
-	font-size: 24px;
-	cursor: pointer;
-	text-align: center;
-	text-decoration: none;
-	outline: none;
-	color: #fff;
-	background-color: rgb(77, 76, 76);
-	border: none;
-	border-radius: 15px;
-	box-shadow: 0 1px #999;
-}
-.button_skills:hover {
-	background-color: red;
-}
-.button_skills:active {
-	background-color: red;
-	box-shadow: 0 5px black;
-	transform: translateY(4px);
-}
-.button_education {
-	margin: 2px;
-	height: 35px;
-	padding: 10px;
-	font-size: 24px;
-	cursor: pointer;
-	text-align: center;
-	text-decoration: none;
-	outline: none;
-	color: #fff;
-	background-color: rgb(77, 76, 76);
-	border: none;
-	border-radius: 15px;
-	box-shadow: 0 1px #999;
-}
-.button_education:hover {
-	background-color: red;
-}
-.button_education:active {
-	background-color: red;
-	box-shadow: 0 5px black;
-	transform: translateY(4px);
-}
-.button_projects {
-	margin: 2px;
-	height: 35px;
-	padding: 10px;
-	font-size: 24px;
-	cursor: pointer;
-	text-align: center;
-	text-decoration: none;
-	outline: none;
-	color: #fff;
-	background-color: rgb(77, 76, 76);
-	border: none;
-	border-radius: 15px;
-	box-shadow: 0 1px #999;
-}
-.button_projects:hover {
-	background-color: red;
-}
-.button_projects:active {
-	background-color: red;
-	box-shadow: 0 5px black;
-	transform: translateY(4px);
-}
-.button_contactme {
-	margin: 2px;
-	height: 35px;
-	padding: 10px;
-	font-size: 24px;
-	cursor: pointer;
-	text-align: center;
-	text-decoration: none;
-	outline: none;
-	color: #fff;
-	background-color: rgb(77, 76, 76);
-	border: none;
-	border-radius: 15px;
-	box-shadow: 0 1px #999;
-}
-.button_contactme:hover {
-	background-color: red;
-}
-.button_contactme:active {
-	background-color: red;
-	box-shadow: 0 5px black;
-	transform: translateY(4px);
-}
-.button_myresume {
-	margin: 2px;
-	height: 35px;
-	padding: 10px;
-	font-size: 24px;
-	cursor: pointer;
-	text-align: center;
-	text-decoration: none;
-	outline: none;
-	color: #fff;
-	background-color: rgb(77, 76, 76);
-	border: none;
-	border-radius: 15px;
-	box-shadow: 0 1px #999;
-}
-.button_myresume:hover {
-	background-color: red;
-}
-.button_myresume:active {
-	background-color: red;
-	box-shadow: 0 5px black;
-	transform: translateY(4px);
-}
-.link_home {
-	color: turquoise;
-}
-.link_about {
-	color: turquoise;
-}
-.link_experience {
-	color: turquoise;
-}
-.link_skills {
-	color: turquoise;
-}
-.link_education {
-	color: turquoise;
-}
-.link_projects {
-	color: turquoise;
-}
-.link_contactme {
-	color: turquoise;
-}
-.link_myresume {
-	color: turquoise;
-}
+
+@media screen and (min-width: 1300px) {
+  .visuallyHidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+  .button_home {
+    margin: 2px;
+    height: 35px;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(77, 76, 76);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 1px #999;
+  }
+  .button_home:hover {
+    background-color: red;
+  }
+  .button_home:active {
+    background-color: red;
+    box-shadow: 0 5px black;
+    transform: translateY(4px);
+  }
+  .button_about {
+    margin: 2px;
+    height: 35px;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(77, 76, 76);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 1px #999;
+  }
+  .button_about:hover {
+    background-color: red;
+  }
+  .button_about:active {
+    background-color: red;
+    box-shadow: 0 5px black;
+    transform: translateY(4px);
+  }
+  .button_experience {
+    margin: 2px;
+    height: 35px;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(77, 76, 76);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 1px #999;
+  }
+  .button_experience:hover {
+    background-color: red;
+  }
+  .button_experience:active {
+    background-color: red;
+    box-shadow: 0 5px black;
+    transform: translateY(4px);
+  }
+  .button_skills {
+    margin: 2px;
+    height: 35px;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(77, 76, 76);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 1px #999;
+  }
+  .button_skills:hover {
+    background-color: red;
+  }
+  .button_skills:active {
+    background-color: red;
+    box-shadow: 0 5px black;
+    transform: translateY(4px);
+  }
+  .button_education {
+    margin: 2px;
+    height: 35px;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(77, 76, 76);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 1px #999;
+  }
+  .button_education:hover {
+    background-color: red;
+  }
+  .button_education:active {
+    background-color: red;
+    box-shadow: 0 5px black;
+    transform: translateY(4px);
+  }
+  .button_projects {
+    margin: 2px;
+    height: 35px;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(77, 76, 76);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 1px #999;
+  }
+  .button_projects:hover {
+    background-color: red;
+  }
+  .button_projects:active {
+    background-color: red;
+    box-shadow: 0 5px black;
+    transform: translateY(4px);
+  }
+  .button_contactme {
+    margin: 2px;
+    height: 35px;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(77, 76, 76);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 1px #999;
+  }
+  .button_contactme:hover {
+    background-color: red;
+  }
+  .button_contactme:active {
+    background-color: red;
+    box-shadow: 0 5px black;
+    transform: translateY(4px);
+  }
+  .button_myresume {
+    margin: 2px;
+    height: 35px;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(77, 76, 76);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 1px #999;
+  }
+  .button_myresume:hover {
+    background-color: red;
+  }
+  .button_myresume:active {
+    background-color: red;
+    box-shadow: 0 5px black;
+    transform: translateY(4px);
+  }
+  .link_home {
+    color: turquoise;
+  }
+  .link_about {
+    color: turquoise;
+  }
+  .link_experience {
+    color: turquoise;
+  }
+  .link_skills {
+    color: turquoise;
+  }
+  .link_education {
+    color: turquoise;
+  }
+  .link_projects {
+    color: turquoise;
+  }
+  .link_contactme {
+    color: turquoise;
+  }
+  .link_myresume {
+    color: turquoise;
+  }
+} */
+
 .retire {
-	grid-area: retire;
-	display: flex;
-	flex-direction: column;
-	row-gap: 30px;
-	margin-top: 5%;
-	width: 30vw;
-	z-index: -1;
-	background-image: url(../images/external-content1.duckduckgo.com.jpg);
-	background-size: contain;
+  grid-area: retire;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-top: 5%;
+  width: 30vw;
+  background-image: url(../images/external-content1.duckduckgo.com.jpg);
+  background-size: contain;
 }
 .wheelhouse {
-	grid-area: wheelhouse;
-	text-align: center;
-	background-image: url(../images/external-content1.duckduckgo.com.jpg);
-	background-size: contain;
-	margin-right: 5%;
+  grid-area: wheelhouse;
+  text-align: center;
+  background-image: url(../images/external-content1.duckduckgo.com.jpg);
+  background-size: contain;
+  /* margin-right: 5%;
+  margin-left: 5%; */
 }
 .awards {
-	grid-area: awards;
-	display: flex;
-	flex-direction: column;
-	row-gap: 30px;
-	margin-top: 5%;
-	background-image: url(../images/external-content1.duckduckgo.com.jpg);
-	background-size: contain;
+  grid-area: awards;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-top: 5%;
+  width: 30vw;
+  background-image: url(../images/external-content1.duckduckgo.com.jpg);
+  background-size: contain;
 }
